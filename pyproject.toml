@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "python_env"
+version = "0.1.0"
+description = "c'est pour un speak up"
+license = "MIT"
+repository = "https://github.com/thomas-marquis/python_env"
+homepage = "https://github.com/thomas-marquis/python_env"
+authors = ["thomas.marquis.dev <Atchoum314!>"]
+keywords = ["pyenv", "poetry"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
