@@ -13,7 +13,7 @@ def countdown(n):
 
 def test_execution(msg):
     def decorator(func):
-        def wrapped(*args, **kwargs):
+        def wrapped_func(*args, **kwargs):
             runner = func(*args, **kwargs)
             print(msg)
             start = time.time()
@@ -22,15 +22,13 @@ def test_execution(msg):
             milliseconds = (end - start) * 1000
             print(f'{milliseconds} ms\n')
             return milliseconds
-        return wrapped
+        return wrapped_func
     return decorator
 
 
 @test_execution('with normal way')
 def normal_way():
-    def runner():
-        countdown(COUNT)
-    return runner
+    return lambda: countdown(COUNT)
 
 
 @test_execution('with threads')
