@@ -38,7 +38,7 @@ python --version
 
 **pour changer de version de python**
 
-Oups ! on a pas installé la bonne version ! En fai on veux la version 3.7
+Oups ! on a pas installé la bonne version ! En fait on veut la version 3.7
 
 Pour ça (toujours dans l'environnement virtuel), il suffit de l'installer :
 
@@ -63,7 +63,7 @@ installons `poetry` :
 conda install poetry
 ```
 
-**sur windows**, vérifier qu'il n'y a pas d'autre petry installé sur le pc. Regarder par exemple dans `~/AppData/Local`, si un dossier `poetry` s'y trouve, le supprimer.
+**sur windows**, vérifier qu'il n'y a pas d'autre poetry installé sur le pc. Regarder par exemple dans `~/AppData/Local`, si un dossier `poetry` s'y trouve, le supprimer.
 
 initialiser le repo :
 
