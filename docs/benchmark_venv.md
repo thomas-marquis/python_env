@@ -9,7 +9,6 @@ $ source venv/bin/activate
 (venv) $ pip install numpy
 (venv) $ pip freeze > requirements.txt
 
-// chez un autre dev :
 $ pip install virtualenv
 $ virtualenv -p /usr/bin/python2.7 venv
 $ source venv/bin/activate
