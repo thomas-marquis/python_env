@@ -38,7 +38,9 @@ python --version
 
 **pour changer de version de python**
 
-Oups ! on a pas installé la bonne version ! En fait on veut la version 3.7
+**ATTENTION !!!** poetry ne fonctionne pas encore avec la version 3.8 de python. C'est pourquoi on va switcher vers la version 3.7.
+
+Oups ! on a pas installé la bonne version ! En fait on veut la version 3.7.
 
 Pour ça (toujours dans l'environnement virtuel), il suffit de l'installer :
 
