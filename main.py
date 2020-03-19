@@ -1,6 +1,7 @@
-import time
 from threading import Thread
 import multiprocessing
+
+from utils import test_execution
 
 
 COUNT = 8000000
@@ -9,21 +10,6 @@ COUNT = 8000000
 def countdown(n):
     while n > 0:
         n -= 1
-
-
-def test_execution(msg):
-    def decorator(func):
-        def wrapped_func(*args, **kwargs):
-            runner = func(*args, **kwargs)
-            print(msg)
-            start = time.time()
-            runner()
-            end = time.time()
-            milliseconds = (end - start) * 1000
-            print(f'{milliseconds} ms\n')
-            return milliseconds
-        return wrapped_func
-    return decorator
 
 
 @test_execution('with normal way')
